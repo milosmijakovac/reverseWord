@@ -1,6 +1,6 @@
 import React from "react";
 
-const Form = ({ word, inputText }) => {
+const WordInput = ({ word, inputText }) => {
   return (
     <div>
       <h2>Enter a word:</h2>
@@ -10,4 +10,4 @@ const Form = ({ word, inputText }) => {
   );
 };
 
-export default Form;
+export default WordInput;

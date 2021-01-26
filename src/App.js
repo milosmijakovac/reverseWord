@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./App.css";
-import Form from "./components/Form";
+import WordInput from "./components/WordInput";
 import ReversedWord from "./components/ReversedWord";
 import  ReversedList  from "./components/ReversedList";
 
@@ -33,7 +33,7 @@ function App() {
 
   return (
     <div className="container">
-      <Form word={word} inputText={handleWordInput} />
+      <WordInput word={word} inputText={handleWordInput} />
 
       <ReversedWord reversedWord={reversedWord} addWord={addWord} />
 
