@@ -39,14 +39,7 @@ function App() {
 
 
       <ReversedList addedWords={addedWords} clearList={handleClear}/>
-      {/* <div>
-        <h2>Reversed Words List:</h2>
-        <ul>
-          <Word addedWords={addedWords} />
-        </ul>
-        <button onClick={handleClear}>Clear list</button>
-        <hr/>
-      </div> */}
+     
     </div>
   );
 }
