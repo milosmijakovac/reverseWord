@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./App.css";
 import Form from "./components/Form";
 import ReversedWord from "./components/ReversedWord";
-import { Word } from "./components/Word";
+import  ReversedList  from "./components/ReversedList";
 
 function App() {
   const [word, setWord] = useState("");
@@ -37,14 +37,16 @@ function App() {
 
       <ReversedWord reversedWord={reversedWord} addWord={addWord} />
 
-      <div>
+
+      <ReversedList addedWords={addedWords} clearList={handleClear}/>
+      {/* <div>
         <h2>Reversed Words List:</h2>
         <ul>
           <Word addedWords={addedWords} />
         </ul>
         <button onClick={handleClear}>Clear list</button>
         <hr/>
-      </div>
+      </div> */}
     </div>
   );
 }
